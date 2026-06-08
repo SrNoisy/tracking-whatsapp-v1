@@ -40,16 +40,12 @@ CTWA Ad → WhatsApp → Meta Cloud API → Datacrazy
 | `Lead` | Mensagem Recebida (com `ctwaId`) | `ctwa_clid` apenas |
 | `Purchase` | Negócio movido para etapa de pagamento | `ctwa_clid` + `value` (R$) |
 
-### Diferencial competitivo
+### Diferencial competitivo (Datacrazy)
 
-Recurso | Datacrazy | Kommo (nativo) | Zendesk + N8N
---------|-----------|----------------|---------------
-Envio CAPI direto | ✅ Nativo (JS block) | ✅ Nativo | ❌ Precisa N8N
-`ctwa_clid` exposto | ✅ `session.getValue("leadCtwaId")` | ⚠️ Só interno | ✅ Webhook
-Eventos custom | ✅ Total (qualquer payload) | ❌ Só Lead/Purchase | ✅ Total
-Infra extra | ❌ Nenhuma | ❌ Nenhuma | ❌ N8N + Sheets
-Custo mensal extra | R$ 0 | R$ 0 | R$ ~50-200 (N8N)
-Dedup `event_id` | ✅ Manual | ✅ Automático | ✅ Manual
+- Envio CAPI via bloco JavaScript nativo — **sem N8N, sem infra extra**
+- `ctwa_clid` exposto via `session.getValue("leadCtwaId")` — sem depender de webhook
+- Eventos custom — liberdade total de payload, não limitado a eventos pré-definidos
+- Dedup via `event_id` + tag no lead
 
 ## Pipeline de passos
 

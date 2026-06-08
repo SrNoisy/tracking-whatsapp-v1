@@ -8,7 +8,7 @@ Playbooks para tracking de campanhas Meta + Google Ads quando o lead vai pro Wha
 
 Quando o anúncio manda o lead pro WhatsApp (CTWA direto ou via LP com botão), a cadeia de identidade entre o clique no anúncio e a venda fechada quebra. Sem identidade, a plataforma de mídia não recebe sinal de qualidade, a otimização degrada e o CPL sobe.
 
-## Stack cobertas
+## Playbook
 
 ### Datacrazy + Meta CAPI (JavaScript blocks)
 
@@ -25,14 +25,6 @@ Pasta [`playbook-datacrazy/`](/playbook-datacrazy/) — ver [README do playbook]
 | 5. Automação Purchase (opcional) | [05-automacao-purchase.md](/playbook-datacrazy/05-automacao-purchase.md) | ✅ Documentado |
 | 6. Testes e verificação | [06-testes-e-verificacao.md](/playbook-datacrazy/06-testes-e-verificacao.md) | ✅ Documentado |
 
-### Kommo CRM
-
-Playbook para tracking CTWA via Kommo CRM. Cobre CAPI nativo (trilha A) e híbrido com N8N (trilha B). Pasta [`playbook-kommo/`](/playbook-kommo/).
-
-### Zendesk Sunshine + N8N
-
-Playbook para tracking CTWA via Zendesk Sunshine + RD Station + N8N. Pasta [`playbook-zendesk-sunshine/`](/playbook-zendesk-sunshine/).
-
 ---
 
 ## Convenções
@@ -40,10 +32,4 @@ Playbook para tracking CTWA via Zendesk Sunshine + RD Station + N8N. Pasta [`pla
 - pt-BR
 - Markdown puro, sem build, sem CI
 - Status: ✅ = documentado · 🟡 = esqueleto, incompleto
-- IDs sensíveis sempre como `[SEU_ID]` — cada implementador preenche seu `capi-config.json`
-
-## Status geral
-
-- **Datacrazy:** ✅ Passos 1 a 6 documentados e testados em produção (ACMAX, Junho 2026)
-- **Kommo:** Trilha A documentada, Trilha B com 1 dependência a validar
-- **Zendesk:** Passos 1-2 executáveis, 3-4 em esqueleto
+- IDs sensíveis sempre como `[SEU_ID]` — cada implementador preenche seu próprio `capi-config.json`
