@@ -25,6 +25,20 @@ Pasta [`playbook-datacrazy/`](/playbook-datacrazy/) — ver [README do playbook]
 | 5. Automação Purchase (opcional) | [05-automacao-purchase.md](/playbook-datacrazy/05-automacao-purchase.md) | ✅ Documentado |
 | 6. Testes e verificação | [06-testes-e-verificacao.md](/playbook-datacrazy/06-testes-e-verificacao.md) | ✅ Documentado |
 
+### Kommo + N8N + Meta CAPI
+
+Playbook replicável pra quem usa **Kommo** como CRM com Digital Pipeline. Usa webhooks nativos do Digital Pipeline + **N8N** como middleware pra enviar eventos `Lead` e `Purchase` pro Pixel da Meta via CAPI — atribuição por hash de telefone (`action_source: phone_call`).
+
+Pasta [`playbook-kommo/`](/playbook-kommo/) — ver [README do playbook](/playbook-kommo/README.md).
+
+| Passo | Arquivo | Status |
+|-------|---------|--------|
+| 1. Cenário e arquitetura | [01-cenario-e-arquitetura.md](/playbook-kommo/01-cenario-e-arquitetura.md) | ✅ Documentado |
+| 2. Coletar IDs e tokens | [02-coletar-ids-e-tokens.md](/playbook-kommo/02-coletar-ids-e-tokens.md) | ✅ Documentado |
+| 3. Criar workflow no N8N | [03-criar-workflow-n8n.md](/playbook-kommo/03-criar-workflow-n8n.md) | ✅ Documentado |
+| 4. Configurar webhook no Digital Pipeline | [04-configurar-webhook-kommo.md](/playbook-kommo/04-configurar-webhook-kommo.md) | ✅ Documentado |
+| 5. Testes e verificação | [05-testes-e-verificacao.md](/playbook-kommo/05-testes-e-verificacao.md) | ✅ Documentado |
+
 ---
 
 ## Convenções

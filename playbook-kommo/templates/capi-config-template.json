@@ -1,0 +1,35 @@
+{
+  "pixel_id": "[SEU_PIXEL_ID]",
+  "pixel_name": "[NOME DO PIXEL]",
+  "meta_api_version": "v21.0",
+  "system_token_permissions": [
+    "ads_read",
+    "ads_management",
+    "business_management",
+    "whatsapp_business_management",
+    "whatsapp_business_manage_events",
+    "pages_read_engagement",
+    "pages_show_list",
+    "pages_read_user_content"
+  ],
+  "kommo_subdomain": "[cliente].kommo.com",
+  "kommo_api_domain": "api-g.kommo.com",
+  "kommo_pipeline_name": "[NOME DO PIPELINE]",
+  "kommo_pipeline_id": "[PIPELINE_ID]",
+  "kommo_statuses": {
+    "lead_id": "[STATUS_LEAD_ID]",
+    "lead_name": "Etapa de leads de entrada",
+    "purchase_id": "142",
+    "purchase_name": "Fechado - ganho",
+    "lost_id": "143",
+    "lost_name": "Perdido"
+  },
+  "kommo_phone_field_id": "[PHONE_FIELD_ID]",
+  "kommo_phone_field_name": "Telefone",
+  "kommo_phone_enum": "WORK",
+  "lead_value_field": "price",
+  "action_source": "phone_call",
+  "n8n_webhook_url": "https://[seu-n8n]/webhook/[cliente]-capi",
+  "n8n_workflow_id": "[WORKFLOW_ID]",
+  "notes": "Tokens sensíveis não incluídos neste arquivo. Armazenar fora do repo."
+}
